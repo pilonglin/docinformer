@@ -1,6 +1,3 @@
-# Authors: Yonghao Song <eeyhsong@gmail.com>
-#
-# License: BSD (3-clause)
 import warnings
 import math
 import torch
@@ -113,16 +110,6 @@ class DOCinformer(EEGModuleMixin, nn.Module):
     activation_transfor: nn.Module
         Activation function as parameter, applied at the FeedForwardBlock module
         inside the transformer. Default is nn.GeLU
-
-    References
-    ----------
-    .. [song2022] Song, Y., Zheng, Q., Liu, B. and Gao, X., 2022. EEG
-       conformer: Convolutional transformer for EEG decoding and visualization.
-       IEEE Transactions on Neural Systems and Rehabilitation Engineering,
-       31, pp.75-719. https://ieeexplore.ieee.org/document/9991178
-    .. [ConformerCode] Song, Y., Zheng, Q., Liu, B. and Gao, X., 2022. EEG
-       conformer: Convolutional transformer for EEG decoding and visualization.
-       https://github.com/eeyhsong/EEG-Conformer.
     """
 
     def __init__(
